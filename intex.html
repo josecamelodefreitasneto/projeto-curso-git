@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<meta charset=UTF-8>
+ <!--INPUT = entrada de dados no mundo html-->
+<input>
+<button> compare como o meu segredo </button>
+<script >
+
+              
+//var segredo = Math.random("10");
+                       //numeros aleadorios 
+var segredos =[10,5,6,1,0];
+//input variavel qualquer         //tag input mundo html
+
+var input = document.querySelector("input");
+//deixa o campo em foco ao recarregar a pagina
+
+input.focus();
+function verifica(){
+	
+		//se o numero digitado for iqual ao segredo
+		if (input.value == segredo) {
+
+		alert("você acertou!");
+	    // se não voce errou	
+	    } else {
+
+		alert("voce errou!!!!!");
+	}
+	input.value="";
+	input.focus();
+}
+var button = document.querySelector("button");
+// aqui chamando a função e execulta a função
+//button.onclick = verifica();
+// aqui chama o codigo da função
+// o codigo de verifica vai ficar no onclick
+button.onclick = verifica;
+
+</script>
+
+</html>
